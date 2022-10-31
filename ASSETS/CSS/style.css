@@ -62,23 +62,56 @@ header {
     
 }
 .banner--front {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 100vw;
     height: inherit;
     background-color: rgba(0, 0, 0, 0.3);
     color: #E8E9F3;
 }
-.techs{
-    width: 30%;
+.banner--content{
     display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: inherit;
+    justify-content: center;  
 }
-.techs div{
-    margin-right: 30px;
+.techs{
+    width: 100%;
+    min-width: 200px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.techs img{
+    width: 45px;
+    height: 45px;
+    margin-right: 3%;
 }
 .banner-text h1{
     font-size: 40px;
+}
+.banner--front form{
+    margin-top: 50px;
+    width: 100%;
+}
+.banner--front form input {
+    width: 300px;
+    height: 25px;
+    background-color: #272635;
+    border: none;
+    color: white;
+}
+.banner--front form button{
+    height: 25px;
+    background-color:#A6A6A8;
+    border: none;
+    border-radius: 2px;
+    color: #272635;
+    font-weight:620;
+    cursor: pointer;
+}
+.banner--front form button:hover{
+    background-color:#B1E5F2;
 }
 
 footer{
