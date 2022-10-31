@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+}
+
+header {
+    height: 80px;
+    background-color: #272635;
+}
+
+.logo {
+    width: 150px;
+    height: 80px;
+    color: #E8E9F3;
+    text-align: center;
+    background-color: #A6A6A8;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #E8E9F3;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #272635;
+}
+
+.menu ul li a:hover {
+    border-bottom: 5px solid #E8E9EB;
+}
+
+.banner {
+    height: calc(100vh - 120px);
+    background-color: #333;
+    background-image: url('/ASSETS/IMAGES/automatizacao-banner.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    
+}
+.banner--front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #E8E9F3;
+}
+.techs{
+    width: 30%;
+    display: flex;
+}
+.techs div{
+    margin-right: 30px;
+}
+.banner-text h1{
+    font-size: 40px;
+}
+
+footer{
+    background-color: #272635;
+    color: #E8E9F3;
+}
