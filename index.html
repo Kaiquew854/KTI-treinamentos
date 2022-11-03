@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/ASSETS/CSS/style.css">
     <title>Kinbb</title>
+    <link rel="shortcut icon" href="logoIcon.png">
 </head>
 
 <body>
@@ -15,8 +16,13 @@
         <div class="container">
 
             <div class="logo">
-                <h1>logo</h1>
-                <img src="" alt="">
+                <img src="/ASSETS/IMAGES/logoMaior.jpg" alt="logo">
+            </div>
+
+            <div class="menu--phone" style="display: none;">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
             </div>
 
             <div class="menu">
@@ -24,8 +30,8 @@
                     <ul>
                         <li><a href="">Sobre nós</a></li>
                         <li><a href="">Especialidades</a></li>
-                        <li><a href="">Portfólio</a></li>
                         <li><a href="">Contato</a></li>
+                        <li><a href="https://wa.me/5511937142829" target="_blank" ><div><img src="/ASSETS/IMAGES/whatsappLogo.png" alt=""></div></a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,31 +65,87 @@
         </section>
     </main>
 
-    <section>
-        <div>
-            <h1>Sobre Nós</h1>
+    <section class="aboutUs">
+        <div class="title">
+            <h1>Sobre nós</h1>
         </div>
-        <div>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book. It has survived not only five
-                centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                passages, and more recently with desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum.</p>
+        <div class="aboutUs--text">
+            <p>
+                Somos uma empresa de tecnologia, focada na melhor solução para o cliente. <br>
+                visamos a desburocratização na relação entre cliente e TI, gerando atendimento rápido e eficaz.<br>
+                Utilizamos softwares e recursos totalmente acessíveis, desta forma contribuímos ativamente com a
+                transformação digital nas empresas. <br>
+                Atuamos com automatização de processos repetitivos, construção de websites e geração de relatórios
+                inteligentes.
+            </p>
         </div>
     </section>
 
+    <section class="Services">
+        <div class="title">
+            <h1>Tipos de automações</h1>
+        </div>
+        
+        <div class="container--services">
+            <div class="Services--list"><div class="imgList"><img src="/ASSETS/IMAGES/icon-excel.jpg" alt=""></div>Planilhas</div>
+            <div class="services--description">
+                Se você tem rotinas de preenchimeto manual de planilhas, necessidade de criação de fórmulas complexas ou se precisa fazer com que várias planilhas se relacionem para obter algm resultado.
+                podemos automatizar estes processos e o melhor de tudo, utiilizando apenas a linguagem de programação por trás do excel.
+            </div>
 
-    <section>
-        <h1>Especialidades</h1>
-        <div>Excel</div>
-        <div>Power BI</div>
-        <div>Robot Process Automation (RPA)</div>
-        <div>Landing page</div>
+            <div class="Services--list"><div class="imgList"><img src="/ASSETS/IMAGES/uiPath5-.jpg" alt=""></div>Automações Web</div>
+            <div class="services--description">
+                Se você possui rotinas em que precisa navegar na Web para capturar dados e alimentar outro sistema com estes dados ou 
+                até mesmo se você precisa criar um robô para preechimento de formulários na web nós temos ótimas soluções utilizando RPA.
+            </div>
+
+            <div class="Services--list"><div class="imgList"><img src="/ASSETS/IMAGES/logo.jpg" alt=""></div>SAP ou ERP</div>
+            <div class="services--description">
+                Se você precisa gerar notas fiscais, CTe entre outros arquivos, nós conseguimos criar excelentes ferramentas para atendê-lo.
+            </div>
+        </div>
     </section>
 
     <section>
+        <div class="slider">
+            <div class="slider--controls">
+                <div class="control btn1">a</div>
+                <div class="control btn2">v</div>
+            </div>
+
+            <div class="main--slider">
+                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-excel.jpg);">
+                    <div class="slide-content">
+                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
+                        <h1>Planilha Excel automatizada</h1>
+                    </div>
+                </div>
+
+                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-dashboard.jpg);">
+                    <div class="slide-content">
+                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
+                        <h1>Relatórios dinâmicos</h1>
+                    </div>
+                </div>
+
+                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-RPA.jpg);">
+                    <div class="slide-content">
+                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
+                        <h1>RPA (Robotic Process Automation)</h1>
+                    </div>
+                </div>
+
+                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-LPage.jpg);">
+                    <div class="slide-content">
+                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
+                        <h1>Landing Page para seu negócio</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
         <h1>Portfólio</h1>
         <div>
             nesta seção podemos colocar videos demonstrando alguns processos automatizados
@@ -91,11 +153,14 @@
     </section>
 
     <footer>
-        <h1>rodapé</h1>
-        <div>redes sociais</div>
         <div>e-mail</div>
+        <div>e-mail</div>
+        <div>e-mail</div>
+        <div>redes sociais</div>
+        <div>35-9999-9999</div>
     </footer>
 
+    <script src="/ASSETS/JAVASCRIPT/script.js"></script>
 </body>
 
 </html>

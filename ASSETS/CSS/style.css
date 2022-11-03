@@ -6,7 +6,6 @@
 .container {
     display: flex;
     align-items: center;
-    max-width: 1140px;
 }
 
 header {
@@ -15,17 +14,23 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 80px;
     height: 80px;
     color: #E8E9F3;
     text-align: center;
     background-color: #A6A6A8;
 }
 
+.logo img {
+    height: inherit;
+    cursor: pointer;
+}
+
 .menu {
     flex: 1;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    margin-right: 50px;
 }
 
 .menu ul {
@@ -51,30 +56,36 @@ header {
 .menu ul li a:hover {
     border-bottom: 5px solid #E8E9EB;
 }
-
+.menu ul li a div img{
+    height: 40px;
+    width: 50px
+}
 .banner {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 80px);
     background-color: #333;
     background-image: url('/ASSETS/IMAGES/automatizacao-banner.jpg');
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
-    
+
 }
+
 .banner--front {
     width: 100vw;
     height: inherit;
     background-color: rgba(0, 0, 0, 0.3);
     color: #E8E9F3;
 }
-.banner--content{
+
+.banner--content {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: inherit;
-    justify-content: center;  
+    justify-content: center;
 }
-.techs{
+
+.techs {
     width: 100%;
     min-width: 200px;
     margin-top: 15px;
@@ -82,18 +93,21 @@ header {
     flex-wrap: wrap;
 }
 
-.techs img{
+.techs img {
     width: 45px;
     height: 45px;
     margin-right: 3%;
 }
-.banner-text h1{
-    font-size: 40px;
+
+.banner-text h1 {
+    font-size: 80px;
 }
-.banner--front form{
+
+.banner--front form {
     margin-top: 50px;
     width: 100%;
 }
+
 .banner--front form input {
     width: 300px;
     height: 25px;
@@ -101,20 +115,152 @@ header {
     border: none;
     color: white;
 }
-.banner--front form button{
+
+.banner--front form button {
     height: 25px;
-    background-color:#A6A6A8;
+    background-color: #A6A6A8;
     border: none;
     border-radius: 2px;
     color: #272635;
-    font-weight:620;
+    font-weight: 620;
     cursor: pointer;
 }
-.banner--front form button:hover{
-    background-color:#B1E5F2;
+
+.banner--front form button:hover {
+    background-color: #B1E5F2;
 }
 
-footer{
+.aboutUs{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.aboutUs--text{
+    line-height: 40px;
+    font-size: 25px;
+}
+.title{
+    font-size: 35px;
+    border-bottom: 1px solid #272635;
+    margin-bottom: 20px;
+}
+
+footer {
     background-color: #272635;
     color: #E8E9F3;
+}
+
+
+.slider {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    
+}
+
+/*transição de slides div pai*/
+.main--slider {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.9s;
+}
+/*transição de slides*/
+
+.slider--item {
+    color: #000000;
+    font-size: 40px;
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+
+}
+.slide-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272635;
+    color: #E8E9EB;
+}
+.slide-content img{
+    height: 100px;
+    width: 120px;
+}
+
+.slider--controls{
+    height: inherit;
+    position: absolute;
+    z-index: 99;
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.control{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.btn1{
+    display: inline-block;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #272635;
+}
+
+.btn2{
+    display: inline-block;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #272635;
+}
+
+
+.Services{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.container--services{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    margin-top: 25px;
+}
+
+.imgList img{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    border: 1px solid #000000;
+    margin-right: 15px;
+}
+
+.Services--list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.services--description{
+    margin-left: 70px;
+    line-height: 30px;
+    font-size: 25px;
+}
+.portfolio{
+    display: none;
 }
