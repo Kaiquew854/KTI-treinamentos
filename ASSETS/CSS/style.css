@@ -1,11 +1,13 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 .container {
     display: flex;
-    align-items: center;
+    padding: 0 20px 0 20px;
+    overflow: hidden;
 }
 
 header {
@@ -14,16 +16,18 @@ header {
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     color: #E8E9F3;
     text-align: center;
-    background-color: #A6A6A8;
+    background-color: transparent;
+    
 }
 
 .logo img {
     height: inherit;
     cursor: pointer;
+    border-radius: 40px;
 }
 
 .menu {
@@ -56,14 +60,16 @@ header {
 .menu ul li a:hover {
     border-bottom: 5px solid #E8E9EB;
 }
-.menu ul li a div img{
+
+.menu ul li a div img {
     height: 40px;
     width: 50px
 }
+
 .banner {
     height: calc(100vh - 80px);
     background-color: #333;
-    background-image: url('/ASSETS/IMAGES/automatizacao-banner.jpg');
+    background-image: url("../IMAGES/automatizacao-banner.jpg");
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
@@ -103,137 +109,38 @@ header {
     font-size: 80px;
 }
 
-.banner--front form {
-    margin-top: 50px;
-    width: 100%;
+.title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ccc;
 }
 
-.banner--front form input {
-    width: 300px;
-    height: 25px;
-    background-color: #272635;
-    border: none;
-    color: white;
-}
-
-.banner--front form button {
-    height: 25px;
-    background-color: #A6A6A8;
-    border: none;
-    border-radius: 2px;
-    color: #272635;
-    font-weight: 620;
-    cursor: pointer;
-}
-
-.banner--front form button:hover {
-    background-color: #B1E5F2;
-}
-
-.aboutUs{
+.aboutUs {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
     margin-top: 30px;
+    
 }
-.aboutUs--text{
+.aboutUs--text {
     line-height: 40px;
     font-size: 25px;
 }
-.title{
-    font-size: 35px;
-    border-bottom: 1px solid #272635;
-    margin-bottom: 20px;
-}
 
-footer {
-    background-color: #272635;
-    color: #E8E9F3;
-}
-
-
-.slider {
+.Services {
     display: flex;
-    flex: 1;
-    height: calc(100vh - 80px);
-    overflow: hidden;
-    
-}
-
-/*transição de slides div pai*/
-.main--slider {
-    height: 100%;
-    display: flex;
-    transition: all ease 0.9s;
-}
-/*transição de slides*/
-
-.slider--item {
-    color: #000000;
-    font-size: 40px;
-    width: 100vw;
-    height: inherit;
-    background-position: center;
-    background-size: cover;
-
-}
-.slide-content{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #272635;
-    color: #E8E9EB;
-}
-.slide-content img{
-    height: 100px;
-    width: 120px;
-}
-
-.slider--controls{
-    height: inherit;
-    position: absolute;
-    z-index: 99;
-    width: 98vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.control{
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    overflow: hidden;
-    cursor: pointer;
-
-}
-
-.btn1{
-    display: inline-block;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-right: 25px solid #272635;
-}
-
-.btn2{
-    display: inline-block;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 25px solid #272635;
-}
-
-
-.Services{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.container--services{
+
+.container--services {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -241,7 +148,7 @@ footer {
     margin-top: 25px;
 }
 
-.imgList img{
+.imgList img {
     height: 60px;
     width: 60px;
     border-radius: 60px;
@@ -249,18 +156,200 @@ footer {
     margin-right: 15px;
 }
 
-.Services--list{
+.Services--list {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 25px;
 }
-.services--description{
+
+.services--description {
     margin-left: 70px;
     line-height: 30px;
     font-size: 25px;
 }
-.portfolio{
+
+
+
+
+
+
+.slider {
+    display: flex;
+    height: 500PX;
+    overflow: hidden;
+    width:100vw;
+}
+
+/*transição de slides div pai*/
+.main--slider {
+    height: inherit;
+    width: 100vw;
+    display: flex;
+    transition: all ease 0.9s;
+    
+}
+/*transição de slides*/
+.slider--item {
+    color: #000000;
+    font-size: 30px;
+    width: inherit;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+.slide-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(39, 38, 53, 0.5);
+    color: #E8E9EB;
+    width: 100%;
+    height: 100px;
+}
+.slide-content img {
+    height: 80px;
+    width: 90px;
+}
+.slider--controls {
+    height: inherit;
+    position: absolute;
+    width: 96vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.control {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.btn1 {
+    display: inline-block;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #272635;
+    
+}
+
+.btn2 {
+    display: inline-block;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #272635;
+
+}
+
+.btn1:hover {
+    border-right-color: #B1E5F2;
+}
+
+.btn2:hover {
+    border-left-color: #B1E5F2;
+}
+
+
+
+.portfolio {
     display: none;
 }
+
+
+
+.section-contact {
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+}
+.section-contact input[type=text],
+.section-contact input[type=email],
+.section-contact textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #CCC;
+    outline: 0;
+    margin-top: 10px;
+}
+.section-contact textarea {
+    height: 100px;
+    resize: none;
+}
+.section-contact--split {
+    display: flex;
+}
+.section-contact--split input:first-child {
+    margin-right: 20px;
+}
+.button{
+    background-color: #B1E5F2;
+    height: 30px;
+    width: auto;
+    border: 2px solid #272635;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #272635;
+    font-weight: bold;
+}
+.button:hover{
+    color: #B1E5F2;
+    background-color: #272635;
+}
+
+
+
+footer {
+    background-color: #272635;
+    color: #E8E9F3;
+    margin-top: 40px;
+    padding-top: 25px;
+}
+
+footer .container{
+    justify-content: space-between;
+}
+
+.contactIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    margin: 6px 10px 6px 10px;
+    cursor: pointer;
+}
+.contactIcons:hover{
+    background-color: #B1E5F2;
+}
+.contactIcons img{
+    height: 20px;
+    width: 10px;
+}
+.larg img{
+    width: 20px;
+}
+
+.iconTgd{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*Responsividade*/
+
+/*tablet*/
+@media (min-width:450px) and (max-width:800px) {}
+
+/*celular*/
+@media (max-width:450px) {}

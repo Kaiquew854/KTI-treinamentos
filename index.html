@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="ASSETS/CSS/style.css">
     <title>Kinbb</title>
     <link rel="shortcut icon" href="logoIcon.png">
 </head>
@@ -16,7 +16,7 @@
         <div class="container">
 
             <div class="logo">
-                <img src="/ASSETS/IMAGES/logoMaior.jpg" alt="logo">
+                <img src="ASSETS/IMAGES/logoIcon.png" alt="logo">
             </div>
 
             <div class="menu--phone" style="display: none;">
@@ -31,7 +31,12 @@
                         <li><a href="">Sobre nós</a></li>
                         <li><a href="">Especialidades</a></li>
                         <li><a href="">Contato</a></li>
-                        <li><a href="https://wa.me/5511937142829" target="_blank" ><div><img src="/ASSETS/IMAGES/whatsappLogo.png" alt=""></div></a></li>
+                        <li><a href="https://wa.me/5511937142829" target="_blank">
+                                <div>
+                                    <img src="ASSETS/IMAGES/whatsappLogo.png" alt="">
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -39,128 +44,183 @@
     </header>
 
     <main>
-
         <section class="banner">
             <div class="banner--front">
-                <div class="banner--content">
+                <div class="banner--content container">
                     <div class="banner-text">
                         <h1>KINBB</h1>
                         <h2>Automatize e transforme seu negócio</h2>
                     </div>
                     <div class="techs">
-                        <img src="/ASSETS/IMAGES/icon-excel.jpg" alt="">
-                        <img src="/ASSETS/IMAGES/uiPath5-.jpg" alt="">
-                        <img src="/ASSETS/IMAGES/icon-powerBi.jpg" alt="">
-                        <img src="/ASSETS/IMAGES/js-icon.png" alt="">
-                        <img src="/ASSETS/IMAGES/html-5-icon.jpg" alt="">
-                        <img src="/ASSETS/IMAGES/css-3-icon.jpg" alt="">
+                        <img src="ASSETS/IMAGES/icon-excel.jpg" alt="">
+                        <img src="ASSETS/IMAGES/uiPath5-.jpg" alt="">
+                        <img src="ASSETS/IMAGES/icon-powerBi.jpg" alt="">
+                        <img src="ASSETS/IMAGES/js-icon.png" alt="">
+                        <img src="ASSETS/IMAGES/html-5-icon.jpg" alt="">
+                        <img src="ASSETS/IMAGES/css-3-icon.jpg" alt="">
                     </div>
-                    <form action="">
-                        <input type="email" placeholder="Seu melhor E-mail">
-                        <button>Cadastrar</button>
-                    </form>
                 </div>
             </div>
 
         </section>
+
+
+        <section class="aboutUs container">
+            <div class="title">
+                <h1>Sobre nós</h1>
+            </div>
+            <div class="aboutUs--text">
+                <p>
+                    Somos uma empresa de tecnologia, focada na melhor solução para o cliente. <br>
+                    visamos a desburocratização na relação entre cliente e TI, gerando atendimento rápido e eficaz.<br>
+                    Utilizamos softwares e recursos totalmente acessíveis, desta forma contribuímos ativamente com a
+                    transformação digital nas empresas. <br>
+                    Atuamos com automatização de processos repetitivos, construção de websites e geração de relatórios
+                    inteligentes.
+                </p>
+            </div>
+        </section>
+
+        <section class="Services container">
+            <div class="title">
+                <h1>Tipos de automações</h1>
+            </div>
+
+            <div class="container--services">
+                <div class="Services--list">
+                    <div class="imgList"><img src="ASSETS/IMAGES/icon-excel.jpg" alt=""></div>Planilhas
+                </div>
+                <div class="services--description">
+                    Se você tem rotinas de preenchimeto manual de planilhas, necessidade de criação de fórmulas
+                    complexas ou se precisa fazer com que várias planilhas se relacionem para obter algm resultado.
+                    podemos automatizar estes processos e o melhor de tudo, utiilizando apenas a linguagem de
+                    programação por trás do excel.
+                </div>
+
+                <div class="Services--list">
+                    <div class="imgList"><img src="ASSETS/IMAGES/uiPath5-.jpg" alt=""></div>Automações Web
+                </div>
+                <div class="services--description">
+                    Se você possui rotinas em que precisa navegar na Web para capturar dados e alimentar outro sistema
+                    com estes dados ou
+                    até mesmo se você precisa criar um robô para preechimento de formulários na web nós temos ótimas
+                    soluções utilizando RPA.
+                </div>
+
+                <div class="Services--list">
+                    <div class="imgList"><img src="ASSETS/IMAGES/logo.jpg" alt=""></div>SAP ou ERP
+                </div>
+                <div class="services--description">
+                    Se você precisa gerar notas fiscais, CTe entre outros arquivos, nós conseguimos criar excelentes
+                    ferramentas para atendê-lo.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+
+                <div class="slider">
+
+                    <div class="slider--controls">
+                        <div class="control btn1"></div>
+                        <div class="control btn2"></div>
+                    </div>
+
+                    <div class="main--slider">
+                        <div class="slider--item" style="background-image: url(./ASSETS/IMAGES/slide-excel.jpg);">
+                            <div class="slide-content">
+                                <img src="ASSETS/IMAGES/logoIcon.png" alt="">
+                                <h1>Planilha Excel automatizada</h1>
+                            </div>
+                        </div>
+
+                        <div class="slider--item" style="background-image: url(./ASSETS/IMAGES/slide-dashboard.jpg);">
+                            <div class="slide-content">
+                                <img src="ASSETS/IMAGES/logoIcon.png" alt="">
+                                <h1>Relatórios dinâmicos</h1>
+                            </div>
+                        </div>
+
+                        <div class="slider--item" style="background-image: url(./ASSETS/IMAGES/slide-RPA.jpg);">
+                            <div class="slide-content">
+                                <img src="ASSETS/IMAGES/logoIcon.png" alt="">
+                                <h1>RPA (Robotic Process Automation)</h1>
+                            </div>
+                        </div>
+
+                        <div class="slider--item" style="background-image: url(./ASSETS/IMAGES/slide-LPage.jpg);">
+                            <div class="slide-content">
+                                <img src="ASSETS/IMAGES/logoIcon.png" alt="">
+                                <h1>Landing Page para seu negócio</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h1>Portfólio</h1>
+            <div>
+                nesta seção podemos colocar videos demonstrando alguns processos automatizados
+            </div>
+        </section>
+
+        <section>
+            <div class="title">Fale conosco</div>
+
+            <div class="section-contact">
+                <form method="POST">
+                    <div class="section-contact--split">
+                        <input type="text" name="name" placeholder="NOME" />
+                        <input type="email" name="name" placeholder="EMAIL" />
+                    </div>
+                    <input type="text" name="name" placeholder="ASSUNTO" />
+                    <textarea name="message" placeholder="MENSAGEM"></textarea>
+                    <input type="submit" value="Enviar mensagem" class="button" />
+                </form>
+            </div>
+        </section>
     </main>
 
-    <section class="aboutUs">
-        <div class="title">
-            <h1>Sobre nós</h1>
-        </div>
-        <div class="aboutUs--text">
-            <p>
-                Somos uma empresa de tecnologia, focada na melhor solução para o cliente. <br>
-                visamos a desburocratização na relação entre cliente e TI, gerando atendimento rápido e eficaz.<br>
-                Utilizamos softwares e recursos totalmente acessíveis, desta forma contribuímos ativamente com a
-                transformação digital nas empresas. <br>
-                Atuamos com automatização de processos repetitivos, construção de websites e geração de relatórios
-                inteligentes.
-            </p>
-        </div>
-    </section>
-
-    <section class="Services">
-        <div class="title">
-            <h1>Tipos de automações</h1>
-        </div>
-        
-        <div class="container--services">
-            <div class="Services--list"><div class="imgList"><img src="/ASSETS/IMAGES/icon-excel.jpg" alt=""></div>Planilhas</div>
-            <div class="services--description">
-                Se você tem rotinas de preenchimeto manual de planilhas, necessidade de criação de fórmulas complexas ou se precisa fazer com que várias planilhas se relacionem para obter algm resultado.
-                podemos automatizar estes processos e o melhor de tudo, utiilizando apenas a linguagem de programação por trás do excel.
-            </div>
-
-            <div class="Services--list"><div class="imgList"><img src="/ASSETS/IMAGES/uiPath5-.jpg" alt=""></div>Automações Web</div>
-            <div class="services--description">
-                Se você possui rotinas em que precisa navegar na Web para capturar dados e alimentar outro sistema com estes dados ou 
-                até mesmo se você precisa criar um robô para preechimento de formulários na web nós temos ótimas soluções utilizando RPA.
-            </div>
-
-            <div class="Services--list"><div class="imgList"><img src="/ASSETS/IMAGES/logo.jpg" alt=""></div>SAP ou ERP</div>
-            <div class="services--description">
-                Se você precisa gerar notas fiscais, CTe entre outros arquivos, nós conseguimos criar excelentes ferramentas para atendê-lo.
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="slider">
-            <div class="slider--controls">
-                <div class="control btn1">a</div>
-                <div class="control btn2">v</div>
-            </div>
-
-            <div class="main--slider">
-                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-excel.jpg);">
-                    <div class="slide-content">
-                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
-                        <h1>Planilha Excel automatizada</h1>
-                    </div>
-                </div>
-
-                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-dashboard.jpg);">
-                    <div class="slide-content">
-                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
-                        <h1>Relatórios dinâmicos</h1>
-                    </div>
-                </div>
-
-                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-RPA.jpg);">
-                    <div class="slide-content">
-                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
-                        <h1>RPA (Robotic Process Automation)</h1>
-                    </div>
-                </div>
-
-                <div class="slider--item" style="background-image: url(/ASSETS/IMAGES/slide-LPage.jpg);">
-                    <div class="slide-content">
-                        <img src="/ASSETS/IMAGES/logoIcon.png" alt="">
-                        <h1>Landing Page para seu negócio</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio">
-        <h1>Portfólio</h1>
-        <div>
-            nesta seção podemos colocar videos demonstrando alguns processos automatizados
-        </div>
-    </section>
-
     <footer>
-        <div>e-mail</div>
-        <div>e-mail</div>
-        <div>e-mail</div>
-        <div>redes sociais</div>
-        <div>35-9999-9999</div>
+
+        <div class="container">
+
+            <div>
+                <div class="iconTgd">
+                    <div class="contactIcons larg">
+                        <div><img src="/ASSETS/IMAGES/telefone.png" alt="foneIcon"></div>
+                    </div>
+                    <div>
+                        (11) 93714-2829
+                    </div>
+                </div>
+
+                <div class="iconTgd">
+                    <div class="contactIcons larg">
+                        <div><img src="/ASSETS/IMAGES/telefone.png" alt="foneIcon"></div>
+                    </div>
+                    <div>
+                        kinbbAdm@kinbbautomatizacao.com.br
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="contactIcons"><img src="/ASSETS/IMAGES/facebook.png" alt="foneIcon"></div>
+                <div class="contactIcons larg"><img src="/ASSETS/IMAGES/instaicon.png" alt="foneIcon"></div>
+            </div>
+
+            <div>
+                <div>alguma descrição qualquer</div>
+            </div>
+        </div>
+
     </footer>
 
-    <script src="/ASSETS/JAVASCRIPT/script.js"></script>
+    <script src="ASSETS/JAVASCRIPT/script.js"></script>
 </body>
 
 </html>

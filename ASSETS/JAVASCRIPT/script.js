@@ -22,7 +22,6 @@ document.querySelector('.btn2').addEventListener('click', ()=>{
 
 function autoClick(){
     curSld++;
-    console.log(curSld);
     if (curSld > qtdSld-1){
         curSld = 0;
     }
