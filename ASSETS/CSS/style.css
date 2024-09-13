@@ -86,7 +86,7 @@ header {
 .banner--content {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 65%;
     height: inherit;
     justify-content: center;
 }
@@ -346,10 +346,96 @@ footer .container{
     align-items: center;
 }
 
+.menu--phone{
+    display: none;
+}
+.menu--phone img{
+    height: 50px;
+    width: 50px;
+}
+
+
 /*Responsividade*/
 
 /*tablet*/
-@media (min-width:450px) and (max-width:800px) {}
+@media (min-width:530px) and (max-width:800px) {
+    .menu{
+        display: flex;
+    }
+    .menu.active{
+        display: flex;
+    }
+    .menu.active ul{
+        flex-direction: column;
+    }
+    /*banner*/
+    .banner--content{
+        width: 92%;
+    }
+}
+
+/*intermediario*/
+@media (min-width:530px) and (max-width:625px) {
+    .menu{
+        display: none;
+    }
+    .menu.active{
+        display: flex;
+    }
+    .menu.active ul{
+        flex-direction: column;
+    }
+    /*banner*/
+    .banner--content{
+        width: 92%;
+    }
+
+    header .container{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu--phone, .logo {
+        display: flex; 
+        width: 50px; 
+        height: 50px;
+        align-self: flex-start;
+        margin-top: 12px;
+    }
+}
 
 /*celular*/
-@media (max-width:450px) {}
+@media (max-width:530px) {
+
+    .menu{
+        display: none;
+    }
+    .menu.active{
+        display: flex;
+    }
+    .menu.active ul{
+        flex-direction: column;
+    }
+
+    header .container{
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .menu--phone, .logo {
+        display: flex; 
+        width: 50px; 
+        height: 50px;
+        align-self: flex-start;
+        margin-top: 12px;
+    }
+    /*banner*/
+    .banner--content{
+        width: 80%;
+    }
+    .banner-text h1{
+        font-size: 3.5rem;
+    }
+    /*dropdown menu*/
+
+
+}

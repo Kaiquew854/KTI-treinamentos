@@ -1,5 +1,6 @@
 let qtdSld;
 let curSld=0;
+let menu=document.getElementById('dropDown-menu');
 qtdSld=document.querySelectorAll('.slider--item').length;
 document.querySelector('.main--slider').style.width=`calc(100vw * ${qtdSld})`;
 
@@ -27,11 +28,25 @@ function autoClick(){
     }
     updateMagin();
 }
+//dropdown
+document.querySelector('.menu--phone').addEventListener('click', ()=>{
+    handleMenuClick();
+})
+
 
 function updateMagin(){
     let slideWidth = document.querySelector('.slider--item').clientWidth; //pega o width para tirar da visao
     let newMargin = (curSld * slideWidth);
     document.querySelector('.main--slider').style.marginLeft= `-${newMargin}px`;
+}
+
+function handleMenuClick(){
+    let activeMenu=menu.classList.contains("active")
+    if (activeMenu){
+        menu.classList.remove("active")
+        return
+    }
+    menu.classList.add("active")
 }
 
 setInterval(autoClick,6000);
